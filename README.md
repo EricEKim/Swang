@@ -20,3 +20,6 @@ HackCU V Project
 		- Cave
 		- Building
 		- Tree House
+	- Title screen
+		- Play
+		- Hi-Score?
