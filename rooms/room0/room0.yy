@@ -7,7 +7,8 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "64a26cf2-6bf0-47c9-b19e-e2b999192045"
+        "64a26cf2-6bf0-47c9-b19e-e2b999192045",
+        "e924bf99-08c1-4191-8826-728f52c163c9"
     ],
     "IsDnD": false,
     "layers": [
@@ -25,7 +26,8 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_1862A8E8","id": "64a26cf2-6bf0-47c9-b19e-e2b999192045","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_1862A8E8","objId": "3869b1cf-a348-4034-a187-0667b47516bd","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 544,"y": 320}
+{"name": "inst_1862A8E8","id": "64a26cf2-6bf0-47c9-b19e-e2b999192045","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_1862A8E8","objId": "3869b1cf-a348-4034-a187-0667b47516bd","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 544,"y": 320},
+{"name": "inst_4A212DBA","id": "e924bf99-08c1-4191-8826-728f52c163c9","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_4A212DBA","objId": "c79a2999-3486-42d5-bf4c-f6b102dcee4b","properties": null,"rotation": 0,"scaleX": 16,"scaleY": 0.5,"mvc": "1.0","x": 512,"y": 768}
             ],
             "layers": [
 
@@ -79,9 +81,9 @@
         "id": "c5603123-12cb-4959-8e11-d72822eddfd3",
         "inheritPhysicsSettings": false,
         "modelName": "GMRoomPhysicsSettings",
-        "PhysicsWorld": false,
+        "PhysicsWorld": true,
         "PhysicsWorldGravityX": 0,
-        "PhysicsWorldGravityY": 10,
+        "PhysicsWorldGravityY": 25,
         "PhysicsWorldPixToMeters": 0.1,
         "mvc": "1.0"
     },
