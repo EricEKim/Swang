@@ -5,13 +5,21 @@ right_key = keyboard_check_pressed(vk_right)
 up_key = keyboard_check_pressed(vk_up)
 
 if right_key{
-	hspeed += 2
-	show_debug_message("Dash")
+	if can_dash{
+		hspeed += 2
+		show_debug_message("Dash")
+		alarm[0] = dash_cool_time
+		can_dash = false
+	}
 }
 
 if up_key{
-	vspeed = -2
-	show_debug_message("Jump!")
+	if can_jump{
+		vspeed = -2
+		show_debug_message("Jump!")
+		alarm[1] = jump_cool_time
+		can_jump = false
+	}
 }
 
 if(keyboard_check_pressed(vk_space))
