@@ -1,5 +1,18 @@
 /// @description Insert description here
 // You can write your code in this editor
-/*while(xtox != obj_tester.x and ytoy != obj_tester.y){
-	
-}*/
+if(!keyboard_check(vk_space) or length < 10)
+{
+	while(x < length)
+	{
+		x += extendSpeed
+		y -= extendSpeed
+		draw_self()
+	}
+	length += extendSpeed
+	x = obj_player.x
+	y = obj_player.y
+}
+else
+{
+		instance_create_depth(0, 0,0, obj_swing);
+}
