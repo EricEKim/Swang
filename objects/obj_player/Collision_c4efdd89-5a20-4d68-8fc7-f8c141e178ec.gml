@@ -3,3 +3,7 @@
 hspeed = 0
 vspeed = 0
 gravity = 0
+restart = true
+if keyboard_check_pressed(vk_enter){
+	room_restart()	
+}

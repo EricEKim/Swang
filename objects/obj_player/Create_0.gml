@@ -5,3 +5,4 @@ dash_cool_time = 45
 can_dash = true
 jump_cool_time = 45
 can_jump = true
+restart = false
