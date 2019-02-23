@@ -118,7 +118,18 @@
             "Key": "3869b1cf-a348-4034-a187-0667b47516bd",
             "Value": {
                 "id": "cba32127-1e36-4db4-a65b-47b5131bc1ba",
-                "resourcePath": "objects\\obj_player\\obj_player.yy",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_player\/obj_player.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -177,6 +188,25 @@
                 ],
                 "resourcePath": "views\/5ef4445c-de7f-4d97-86b6-7bc5eba03aab.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "793bf7aa-c86d-436b-a295-e972881386e8",
+            "Value": {
+                "id": "7279fc8f-084e-4612-ade7-992c01910a98",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "rooms\/rm_titleScreen\/rm_titleScreen.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
