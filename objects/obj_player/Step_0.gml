@@ -17,7 +17,17 @@ if(!instance_exists(obj_swing)) //Fall and adjust camera
 	}
 	else if(obj_view.yOffset > 0 and instance_exists(obj_web) or obj_view.yOffset > 0 and instance_exists(obj_swing))
 	{
+		reset = true
 		obj_view.yOffset -= 4
+	}
+	
+	if(reset == true and obj_view.yOffset > 0)
+	{
+		obj_view.yOffset -= 4
+	}
+	else if(reset == true)
+	{
+		reset = false
 	}
 }
 

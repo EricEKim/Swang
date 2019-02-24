@@ -3,3 +3,4 @@
 //physics_world_gravity(0,25)
 swingPress = vk_space
 restart = vk_backspace
+reset = false
