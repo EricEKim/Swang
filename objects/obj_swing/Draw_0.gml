@@ -18,5 +18,10 @@ if(keyboard_check(swingPress)) //While Holding Space, Draw Line
 }
 else
 {
+	obj_player.jumpBool = true
+	obj_player.boostBool = true
 	instance_destroy();
 }
+x = atx
+y = aty
+draw_sprite(spr_target, 0, x, y)

@@ -7,6 +7,22 @@ if(keyboard_check_pressed(swingPress)) //Create Web
 		instance_create_depth(x, y, 0, obj_web);
 	}
 }
+else if(keyboard_check(vk_shift) and boostBool)
+{
+	frameCount += 1
+	if(frameCount == 5) //Boost
+	{
+		phy_speed_x += 10
+		boostBool = false
+		frameCount = 0
+	}
+}
+else if(frameCount > 0 and jumpBool) //Jump
+{
+	phy_speed_y = -10
+	jumpBool = false
+	frameCount = 0
+}
 
 if(!instance_exists(obj_swing)) //Fall and adjust camera
 {

@@ -17,14 +17,18 @@ if(!keyboard_check(swingPress) or length < minimumLine) //Draw Line Until Space 
 		it += 1
 		draw_self();
 	}
+	draw_sprite(spr_target, 0, x, y)
 	length += extendSpeed
 }
 else //Create Swing Object
 {
-	instance_create_depth(0, 0, 0, obj_swing);
-	obj_swing.atx = obj_player.x + length;
-	obj_swing.aty = obj_player.y - length;
-	rope = sqrt(2 * sqr(length))
-	obj_swing.rope = rope
+	if(place_meeting(x, y, obj_skyscraper))
+	{
+		instance_create_depth(0, 0, 0, obj_swing);
+		obj_swing.atx = obj_player.x + length;
+		obj_swing.aty = obj_player.y - length;
+		rope = sqrt(2 * sqr(length))
+		obj_swing.rope = rope
+	}
 	instance_destroy();
 }

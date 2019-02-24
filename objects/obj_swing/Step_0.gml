@@ -30,6 +30,8 @@ if(snag == 1) //Circular Motion
 	}
 	else
 	{
+		obj_player.jumpBool = true
+		obj_player.boostBool = true
 		instance_destroy();
 	}
 }
