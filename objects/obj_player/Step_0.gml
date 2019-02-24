@@ -22,10 +22,6 @@ if up_key{
 	}
 }
 
-if(keyboard_check_pressed(vk_space))
-{
-		if(!instance_exists(obj_web))
-		{
-				instance_create_depth(x, y, 0, obj_web);
-		}
+if restart{
+	speed = 0
 }
