@@ -11,27 +11,6 @@ if(acLength > rope and a == 0)
 {
 		a = 1
 		momentum = sqrt(sqr(obj_player.phy_speed_x) + sqr(obj_player.phy_speed_y))
-		/*if(obj_player.x < atx)
-		{
-				fix = cos(angle * (pi / 180))
-				show_debug_message(angle)
-				show_debug_message(fix)
-				ySpeed = obj_player.phy_speed_y
-				fix = fix * ySpeed
-				obj_player.phy_speed_y -= fix
-				obj_player.phy_speed_x += fix
-				//obj_player.phy_position_y -= fix
-		}
-		else
-		{
-				fix = cos(angle * (pi / 180))
-				show_debug_message(angle)
-				show_debug_message(fix)
-				ySpeed = obj_player.phy_speed_y
-				fix = fix * ySpeed
-				obj_player.phy_speed_y -= fix
-				obj_player.phy_speed_x -= fix
-		}*/
 }
 if(a == 1)
 {

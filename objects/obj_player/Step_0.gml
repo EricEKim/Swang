@@ -11,6 +11,14 @@ if(keyboard_check_pressed(vk_space))
 if(!instance_exists(obj_swing))
 {
 		phy_speed_y += 0.2
+		if(!instance_exists(obj_web) and !instance_exists(obj_swing) and phy_speed_y > 0 and obj_view.yOffset < 30)
+		{
+				obj_view.yOffset += 4
+		}
+		else if(obj_view.yOffset > 0 and instance_exists(obj_web) or obj_view.yOffset > 0 and instance_exists(obj_swing))
+		{
+				obj_view.yOffset -= 4
+		}
 }
 if(keyboard_check_pressed(vk_backspace))
 {

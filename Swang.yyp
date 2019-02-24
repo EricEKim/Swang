@@ -327,10 +327,10 @@
             }
         },
         {
-            "Key": "ea66b964-8ae0-4366-815a-92f93a451177",
+            "Key": "e7d3975c-84e8-4c60-8142-7b5855bc61c8",
             "Value": {
-                "id": "23642385-9a60-4c5b-91e2-5e1209f36c4e",
-                "resourcePath": "objects\\obj_test\\obj_test.yy",
+                "id": "07ebc34b-6260-458a-9b63-1ea53f38e011",
+                "resourcePath": "objects\\obj_fixView\\obj_fixView.yy",
                 "resourceType": "GMObject"
             }
         },
