@@ -4,22 +4,18 @@ angle = point_direction(obj_player.x, obj_player.y, atx, aty)
 xdiff = atx - obj_player.x
 ydiff = aty - obj_player.y
 len = sqrt(sqr(xdiff) + sqr(ydiff))
-vx = xdiff/len
-vy = ydiff/len
-acLength = sqrt(sqr(xdiff) + sqr(ydiff))
-if(acLength > rope and a == 0)
+if(len > rope and snag == 0) //If Rope Snags
 {
-		a = 1
-		momentum = sqrt(sqr(obj_player.phy_speed_x) + sqr(obj_player.phy_speed_y))
+	snag = 1
+	momentum = sqrt(sqr(obj_player.phy_speed_x) + sqr(obj_player.phy_speed_y))
 }
-if(a == 1)
+if(snag == 1) //Circular Motion
 {
 	show_debug_message(momentum)
 	if(obj_player.x < atx)
 	{
 		negCos = cos(angle * (pi / 180))
 		negSin = sin(angle * (pi / 180))
-		
 		obj_player.phy_speed_y = momentum * negCos
 		obj_player.phy_speed_x = momentum * negSin
 		momentum += negSin * 0.2
@@ -28,17 +24,16 @@ if(a == 1)
 	{
 		negCos = cos(angle * (pi / 180))
 		negSin = sin(angle * (pi / 180))
-		
 		obj_player.phy_speed_y = momentum * negCos
 		obj_player.phy_speed_x = momentum * negSin
 		momentum -= negSin * 0.2
 	}
 	else
 	{
-			instance_destroy();
+		instance_destroy();
 	}
 }
 else
 {
-		obj_player.phy_speed_y += 0.2
+	obj_player.phy_speed_y += 0.2
 }

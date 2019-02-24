@@ -1,3 +1,4 @@
-/// @description Insert description here
+/// @description Initialize Variables
 // You can write your code in this editor
-a = 0
+snag = 0
+swingPress = vk_space

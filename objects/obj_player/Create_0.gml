@@ -1,4 +1,5 @@
-/// @description Insert description here
+/// @description Initialize Player Variables
 // You can write your code in this editor
 //physics_world_gravity(0,25)
-phy_speed_y = 1
+swingPress = vk_space
+restart = vk_backspace
