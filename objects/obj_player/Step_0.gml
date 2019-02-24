@@ -7,3 +7,12 @@ if(keyboard_check_pressed(vk_space))
 				instance_create_depth(x, y, 0, obj_web);
 		}
 }
+
+if(!instance_exists(obj_swing))
+{
+		phy_speed_y += 0.2
+}
+if(keyboard_check_pressed(vk_backspace))
+{
+		room_goto(room0);
+}
