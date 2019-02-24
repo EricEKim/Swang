@@ -7,10 +7,10 @@ if(keyboard_check_pressed(swingPress)) //Create Web
 		instance_create_depth(x, y, 0, obj_web);
 	}
 }
-else if(keyboard_check(vk_shift) and boostBool)
+else if(keyboard_check(vk_shift))
 {
 	frameCount += 1
-	if(frameCount == 5) //Boost
+	if(frameCount == 5 and boostBool) //Boost
 	{
 		phy_speed_x += 10
 		boostBool = false
